@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8c94da3dae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="eminem-9fn-344x344.jpg" alt="" class="song-img">
+            <h1>Mockingbird</h1>
+            <p>Eminem</p>
+
+            <audio  id="song">
+                <source id="audioSrc" type="audio/mpeg" src="Eminem - Mockingbird [Official Music Video].mp3">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <div onclick="playPrev() ">
+                    <i class="fa-solid fa-backward"></i>
+                </div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div onclick="playNext()"><i class="fa-solid fa-forward"></i></div>
+                    
+                    
+               
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
