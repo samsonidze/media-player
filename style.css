@@ -38,6 +38,8 @@ nav{
     background: #fff;
     color: #449f63;
     box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+    position: relative;
+    cursor: pointer;
 }
 
 .song-img{
@@ -150,3 +152,43 @@ p{
     }
    
 }
+
+.menu-button {
+
+    border: none;
+    color: #013220;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  .menu-button:hover {
+    background-color: rgba(115, 115, 115, 0.5);
+  }
+   .sliding-menu {
+    position: absolute;
+    top: 25%; 
+    right: 30%;
+    width: 200px; 
+    max-height: 0;
+    overflow: hidden;
+    background-color: #304440;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    opacity: 0; 
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .menu-link:hover {
+    background-color: #1f3a33;
+  }
+  
